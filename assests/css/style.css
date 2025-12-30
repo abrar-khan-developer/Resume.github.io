@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #414141;
+}
+/* <================ Global Css Classes ============> */
+button{
+    background-color: #E14949;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #E14949;
+    padding-inline: 30px;
+    padding-block: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid #E14949;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    margin-block: 2rem;
+    min-width: 100%;
+}
+h2 span{
+    color: #E14949;
+}
+
+/* <================ contentShow ============> */
+.contentShow{
+    display: none;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(250, 244, 244,.2);
+}
+.contentShow .content{
+    position: fixed;
+    padding-top: 15%;
+    z-index: 110;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    gap: 20%;
+    color: #E14949;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    padding-inline: 100px;
+    overflow-y: scroll;
+}
+.contentShow .content i{
+    position: relative;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.contentShow .content i:hover{
+    transform: scale(1.2);
+}
+/* <================ Navbar Css Classes ============> */
+nav{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-block: 15px;
+    padding-inline: 1.5rem;
+    flex-direction: column;
+}
+  .logo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+nav .logo i{
+    font-size: 35px;
+}
+nav ul{
+    flex: 1;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-top: 2rem;
+}
+nav ul li{
+    cursor: pointer;
+    }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    }
+nav ul .active{
+    color : #E14949;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color : #E14949;
+}
+.show{
+    display: flex;
+}
+/* <===========  main  ==============> */
+.main{
+    padding-top: 70px;
+}
+.main div{
+    margin-block: .5rem;
+}
+/* <===========  section-1  ==============> */
+.section-1{
+    display: flex;
+    flex-direction: column;
+}
+.section-1 .selfInfoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(19, 18, 18) , rgb(27, 26, 26));
+    color: white;
+    min-height: 90vh;
+    flex: 1;
+}
+.section-1 .selfInfoCard h2{
+    font-size: 2rem;
+    position: relative;
+    top: -10;
+}
+.section-1 .img{
+    background-image: url('../pic/Abrar.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center ;
+    min-height: 90vh;
+    flex: 1;
+}
+/* <===========  section-2  ==============> */
+.section-2{
+    padding-block: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+}
+.section-2 .profile{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.section-2 .profile img{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 
+    4px 6px 20px rgba(0, 0, 0, 0.19);
+    height: 550px;
+}
+.section-2 .details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+    padding-inline: 1rem;
+}
+
+.section-2 .details p{
+    line-height: 2em;
+    width: 90%;
+}
+.section-2 .details .skills{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-block: 30px;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.section-2 .details .skills h6{
+    font-size: 15px;
+    max-width: min-content;
+}
+/* <===========  section-3  ==============> */
+.section-3{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 5%;
+}
+.section-3 .proj{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 5%;
+}
+.section-3 .card{
+ background-size: cover;
+ width: 100%;
+}
+.section-3 .card .shadow{
+    background-color: rgba(250, 246, 246, 0.8);
+    cursor: pointer;
+    color: #E14949;
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    transition: visibility .1s linear .1s;
+}
+.section-3 .card:hover .shadow{
+  visibility: visible;
+}
+  
+/* <===========  section-4  ==============> */
+.section-4 .first{
+    height: 30rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('./background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    font-size: 1.4em;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-4 .first h3 span{
+    animation: lineVisible 1s linear infinite;
+}
+@keyframes lineVisible {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.section-4 .first h4{
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.section-4 .first h4:hover{
+    border-bottom: 2px solid #E14949;
+}
+
+.section-4 .second{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-4 .second .skills{
+    padding-inline: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.skillCard{
+    text-align: center;
+    min-width: 25%;
+    position: relative;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    font-size: 15px;
+    overflow: hidden;
+}
+.skillCard .img-wrapper{
+    grid-column: 1/1;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.skillCard .img-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.3); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.skillCard .img-wrapper:hover::after{
+    height: 100%;
+    opacity: 1;
+}
+.skillCard .img-wrapper:hover{
+    scale: 1.1;
+}
+.skillCard h3:hover{
+    cursor: pointer;
+    color: #E14949;
+}
+.skillCard .img-wrapper i{
+    color: #E14949;
+    font-size: 50px;
+    display: none;
+}
+.skillCard .img-wrapper:hover .fa-circle-info{
+    display: block;
+}
+
+/* <===========  section-5  ==============> */
+.section-5{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-inline: 5%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    padding-block: 8%;
+    }
+.section-5 .form{
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 15px;
+}
+.section-5 .form .formIcon{
+    flex: 1;
+}
+.section-5 .form .formIcon .myDetails{
+    display: flex;
+    gap: 50px;
+    align-items: start;
+}
+.section-5 .form .formIcon .myDetails div{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-5 .form form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section-5 .form form input{
+    height: 40px;
+}
+.section-5 .form form button{
+    margin-block: 40px;
+}
+
+/* <===========  Footer  ==============> */
+footer{
+    background-color: black;
+    margin-top: 5%;
+    padding-inline: 20px;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+footer div{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.child{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .logo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+footer .social-logo{
+    flex: 3;
+    width: 100%;
+    justify-content: space-between;
+}
+.owner{
+    flex: 1;
+    padding-left: 20px;
+}
+footer .social-logo a{
+    color: #E14949;
+    font-size: 19px;
+    cursor: pointer;
+}
+footer .social-logo a:hover{
+    font-size: 25px;
+}
+/* <====== Breakpoints ======> */
+/* <================ For Small Screen Device ============> */
+@media screen and (max-width: 474px){
+    .contentShow .content{
+        font-size: 25px;
+        width: 100%;
+        padding-top: 30%;
+        padding-inline: 5px;
+        gap: 15%;
+        > i{
+            margin-right: 50px;
+        }
+    }
+    /* <========= section 1 ===========> */
+    .section-1 .selfInfoCard h2{
+     font-size: 1.2rem;
+    }
+    .section-1 .selfInfoCard h1{
+        font-size: 2.2rem;
+    }
+/* <========= section 2 ===========> */
+    .section-2 .details .skills{
+         gap: 20px;
+    }
+/* <========= section 3 ===========> */
+    .section-3 .card{
+        min-width: 80%;
+        background-size: 100% 100%;
+        min-width: 90%;
+    }
+/* <========= section 4 ===========> */
+     .section-4 .first{
+        height: 15rem;
+        font-size: .7em;
+        align-items: end;
+        padding-bottom: 15%;
+    }
+    .section-4 .second .skills{
+         grid-template-columns: repeat(1,1fr);
+    }
+    /* <========= section 5 ===========> */
+    .section-5 .form{
+        font-size: 13px;   
+        text-align: center;
+    }
+    /* <========= footer ===========> */
+    .child{
+    flex-direction: column;
+    }
+    footer .social-logo{
+    flex: 1;
+    width: 100%;
+    justify-content: space-between;
+    } 
+}
+
+/* <================ For large Screen Device ============> */
+@media screen and (min-width: 1150px){
+     .contentShow .content{
+        padding-top: 8%;
+        font-size: 30px;
+    }
+    /* <========= Navbar ===========> */
+    nav{
+        flex-direction: row;
+    }
+    nav .logo{
+        justify-content: flex-start;
+    }
+    nav .logo i{
+         display: none;
+    }
+    nav ul{
+        display: flex;
+        flex: 6;
+        justify-content: flex-end;
+        flex-direction: row;
+    }  
+    /* <========= section 1 ===========> */
+    .section-1{
+        display: flex;
+        flex-direction: row;
+    }
+    .section-1 .selfInfoCard{
+        font-size: 2.5em;
+    }
+    .section-1 .selfInfoCard h2{
+        font-size: 1.2em;
+    }
+/* <========= section 2 ===========> */
+    .section-2{
+        flex-direction: row;
+    }
+/* <========= section 3 ===========> */
+    .section-3 .card{
+         min-width: 30%;
+    }
+    .section-3 .proj{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1%;
+    }
+    /* <===========  section-4  ==============> */
+    .section-4 .first{
+        height: 40rem;
+        font-size: 3.5em;
+    }
+      .section-4 .second .skills{
+         grid-template-columns: repeat(3,1fr);
+         gap: 40px;
+    }
+    .skillCard{
+        font-size: 25px;
+    }
+    /* <===========  section-5  ==============> */
+   .section-5 .form{
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    }
+    /* <===========  footer  ==============> */
+    footer .social-logo{
+    flex: 1;
+    } 
+    footer .social-logo a{
+    font-size: 30px;
+    }
+    footer .social-logo a:hover{
+        transform: scale(1.5);
+    }
+}

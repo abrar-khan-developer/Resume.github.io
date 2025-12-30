@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <============ Fontawsome Links ===========> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <============ custom css style ===========> -->
+     <link rel="stylesheet" href="./assests/css/style.css">
+     <!-- <============ custom javascript ===========> -->
+      <script src="./assests/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav>
+                <div class="logo">
+                    <h1 href = "./index.html">Khan</h1>
+                    <i class="fa-solid fa-bars" onclick="hideMenuOfNav()" id="navbtn"></i>
+                </div>
+
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about" >About </a></li>
+                    <li><a href="#portfolio" >Portfolio </a></li>
+                    <li><a href="#skills" >New Skills </a></li>
+                    <li><a href="#contact" >Contact </a></li>
+                </ul>
+
+        </nav>
+    </header>
+     <!--====================  Top On Every Div ====================-->
+     <div class="contentShow">
+        <div class="content" id = 'info-display'>
+            <i class="fa-solid fa-x"></i>
+        </div>
+     </div>
+     <!--==================== MAIN ====================-->
+     <main class="main">
+
+        <div class="section-1" id = 'home'>
+
+            <div class="selfInfoCard">
+                <h1>Abrar khan</h1>
+                <h2>Reactjs Developer</h2>
+            </div>
+
+            <div class="img">
+                
+            </div>
+
+        </div>
+
+         <div class="section-2" id = 'about'>
+
+            <div class="profile">
+                <img src="./assests/pic/Abrar.jpeg" width="100%"  alt="abrar khan">
+            </div>
+
+            <div class="details">
+                <h2 class = 'h2'>About <span>ME</span></h2>
+
+                <p>Hello! I'm Abrar khan. I'm a web developer, and I'm very passionate and dedicated to my work. With 2 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+
+                <div class="skills">
+                    <h6><i class="fa-solid fa-angles-right"></i> Web Development</h6>
+                    <h6 style="max-width: 100px;"><i class="fa-solid fa-angles-right" ></i>Problem Solving skills</h6>
+                    <h6><i class="fa-solid fa-angles-right"></i>Communication skills</h6>
+                </div>
+
+                <a href="./assests/pic/ABRAR_KHAN.pdf" download="ABRAR_KHAN.pdf">
+                    <button> Download CV </button>
+                </a>
+            </div>
+
+        </div>    
+
+        <div class="section-3" id = 'portfolio'>
+
+            <h2 class = 'h2'>MY <span>PROJECTS</span></h2>
+
+            <div class="proj" id="project">
+               
+            </div>
+
+        </div>
+
+        <div class="section-4" id = 'skills'>
+        
+            <div class="first">
+                <h3>I'm available for freelance work <span>_</span></h3>
+                <h4>Contact</h4>
+            </div>
+
+            <div class="second">
+
+                <h2 class = 'h2'> My <span>SKILLLS</span> </h2>
+
+                <div class="skills" id="skills-section"> 
+
+                </div>  
+
+            </div>
+
+        </div>
+
+         <div class="section-5" id = 'contact'>
+
+            <h2> Get In  <span> Touch </span> </h2>
+            <div class="form">
+
+                <div class="formIcon">
+
+                    <p style="width: 85%; margin-bottom: 8%;">Please fill out the form on this section to contact with me. Or call between 11:00 a.m. and 4:00 p.m. ET, Monday through Friday</p>
+
+                    <div class="myDetails">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Address:</p>
+                        </div>
+                        <p>Bissmillah Chock Baldia town, Karachi.</p>
+                    </div>
+
+                    <div class="myDetails">
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Email:</p>
+                        </div>
+                        <p>abrar0349khan@gmail.com</p>
+                    </div>
+
+                    <div class="myDetails">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Phone:</p>
+                        </div>
+                        <p>0349-2284930</p>
+                    </div>
+
+                </div>
+                
+                <form action="#">
+                    <input type="text" placeholder="Name">
+
+                    <input type="email" placeholder="Email">
+
+                    <textarea placeholder="Message" rows="16" cols="50"></textarea>
+
+
+                    <button> Submit </button>
+                </form>
+
+            </div>
+
+        </div>
+
+     </main>
+
+     <!--==================== FOOTER ====================-->
+     <footer class="footer">
+         <div class="child">
+
+            <div class="logo">
+                <h1 href = "./index.html">Khan</h1>
+                <!-- <i class="fa-solid fa-bars" onclick="hideMenuOfNav()"></i> -->
+            </div>
+            
+            <div class="social-logo">
+                <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" ><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" ><i class="fa-brands fa-github"></i></a>
+                <a href="#" ><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="owner">
+                <p>Abrar khan Copy Right</p>
+            </div>
+
+         </div>
+     </footer>
+    
+</body>
+</html>
