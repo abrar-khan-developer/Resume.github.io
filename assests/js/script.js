@@ -1,9 +1,24 @@
-// navbar open close and also change icon function 
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[// navbar open close and also change icon function 
 
 let navItems = document.querySelector('nav ul');
 let navbtn = document.getElementById('navbtn')
 let dashboard = document.getElementById('info-display')
+let navBarItems = document.querySelectorAll('nav ul li a')
 
+// navbar link color change logic
+navBarItems.forEach((tag) => {
+     tag.addEventListener('click',(e) => {
+      console.log("it's click")
+        linkAdd(e)
+     })
+  })
+
+function linkAdd(e){
+  navBarItems.forEach( (tag) => {
+    tag.className = ''
+  })
+  e.target.className = 'active'
+}
 
 function hideMenuOfNav(){
     navItems.classList.toggle('show')
@@ -20,7 +35,7 @@ function divHide(){
     let pOfDash = document.getElementById('dashboard-info')
     pOfDash.remove()
     contentDiv.classList.remove('show')
-    console.log('pOfDash',pOfDash)
+    // console.log('pOfDash',pOfDash)
 }
 function divAddInfo(tag){
   dashboard.appendChild(tag)
@@ -28,9 +43,9 @@ function divAddInfo(tag){
 // section-3
 let projDiv = document.getElementById('project')
 const imagesData = [
-  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'Archetecture.png'},
-  { id : 2 , title: 'E-commerce Website', year: '2024', imgUrl:'e-commerce.png' },
-  { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'education.png' },
+  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'Archetecture.png',videoUrl : '../assests/video'},
+  { id : 2 , title: 'E-commerce Website', year: '2024', imgUrl:'e-commerce.png',videoUrl : '../assests/video' },
+  { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'education.png',videoUrl : '../assests/video'},
 ];
 imagesData.forEach((imageData , id) => {
 
@@ -53,6 +68,21 @@ imagesData.forEach((imageData , id) => {
   const shadowDiv = document.createElement('div')
   shadowDiv.className = 'shadow'
 
+  const video = document.createElement('video');
+  video.src = imageData.videoUrl;     
+  video.controls = true;      
+  video.autoplay = false;
+  video.loop = false;
+  video.muted = false;
+  video.style.width = '100%'
+  video.style.height = '100%'
+
+  video.id = 'dashboard-info'
+
+  cardDiv.addEventListener('click',() => {
+    divAddInfo(video)
+  })
+
   shadowDiv.appendChild(icon)
   shadowDiv.appendChild(h3);
   shadowDiv.appendChild(p);
@@ -71,6 +101,8 @@ contentBtn.addEventListener('click',divHide);
 card.forEach((ele)=>{
   ele.addEventListener('click',divShow)
 })
+
+
 // section 4
 
 const cardsData = [
@@ -171,4 +203,3 @@ const cardsData = [
 
     skillDiv.appendChild(cardDiv);
   });
-

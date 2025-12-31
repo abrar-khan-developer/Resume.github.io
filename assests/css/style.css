@@ -109,7 +109,7 @@ nav ul li a{
     color: white;
     font-size: 20px;
     }
-nav ul .active{
+.active{
     color : #E14949;
     cursor: pointer;
 }
