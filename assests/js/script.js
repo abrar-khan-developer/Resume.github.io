@@ -42,11 +42,15 @@ function divAddInfo(tag){
 // section-3
 let projDiv = document.getElementById('project')
 const imagesData = [
-  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'../pic/Archetecture.png',videoUrl : '../assests/video/Sedona.mp4'},
-  { id : 2 , title: 'E-commerce Website', year: '2024', imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/e-commerce.png',videoUrl : '../assests/video/E-commmerce.mp4' },
-  { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//education.png',videoUrl : '../assests/video'},
-  { id : 4 , title: 'Responsive Dashboard', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//Dashboaard.png',videoUrl : '../assests/video/Dashboard.mp4'},
-  { id : 5 , title: 'Headphones Sell', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//Headphone.png',videoUrl : '../assests/video/JPJ.mp4'},
+  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Archetecture.png',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video/Sedona.mp4'},
+
+  { id : 2 , title: 'E-commerce Website', year: '2024', imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/e-commerce.png',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video/E-commmerce.mp4' },
+
+  { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/education.png',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video'},
+
+  { id : 4 , title: 'Responsive Dashboard', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Dashboaard.png',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video/Dashboard.mp4'},
+  
+  { id : 5 , title: 'Headphones Sell', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Headphone.png',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video/JPJ.mp4'},
   
 ];
 imagesData.forEach((imageData , id) => {
@@ -110,7 +114,7 @@ card.forEach((ele)=>{
 const cardsData = [
     {
       id : 1,
-      imgSrc: '../assests/pic/html.png',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/html.png',
       title : 'HyperText Markup Language',
       skillName : 'HTML',
       description:
@@ -120,7 +124,7 @@ const cardsData = [
     },
     {
       id : 2,
-      imgSrc: '../assests/pic/CSS-Logo.png',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/CSS-Logo.png',
       title : 'Cascading Style Sheets',
       skillName : 'CSS',
       description:
@@ -128,7 +132,7 @@ const cardsData = [
     },
     {
       id : 3,
-      imgSrc: '../assests/pic/javaScript.jpg',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/javaScript.jpg',
       title : 'JavaScript',
       skillName : 'Javascript',
       description:
@@ -136,7 +140,7 @@ const cardsData = [
     },
     {
       id : 4,
-      imgSrc: '../assests/pic/React.png',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/React.png',
       title : 'Reactjs JavaScript Library',
       skillName : 'Reactjs',
       description:
@@ -144,7 +148,7 @@ const cardsData = [
     },
     {
       id : 5,
-      imgSrc: '../assests/pic/Bootstrap.jpeg',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Bootstrap.jpeg',
       title : 'Booststrap CSS Framework',
       skillName : 'Bootstrap',
       description:
@@ -152,7 +156,7 @@ const cardsData = [
     },
     {
       id : 5,
-      imgSrc: '../assests/pic/Tailwind.png',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Tailwind.png',
       title : 'Tailwind CSS Framework',
       skillName : 'Tailwind',
       description:
@@ -160,7 +164,7 @@ const cardsData = [
     },
     {
       id : 6,
-      imgSrc: '../assests/pic/Nextjs.png',
+      imgSrc: 'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Nextjs.png',
       title : 'Next JavaScript Library for full stack',
       skillName :'Next js',
       description:
