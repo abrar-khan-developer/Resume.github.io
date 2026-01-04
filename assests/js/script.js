@@ -44,9 +44,9 @@ let projDiv = document.getElementById('project')
 const imagesData = [
   { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Archetecture.png',videoUrl : '../assests/video/Sedona.mp4'},
   { id : 2 , title: 'E-commerce Website', year: '2024', imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/e-commerce.png',videoUrl : '../assests/video/E-commmerce.mp4' },
-  { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'education.png',videoUrl : '../assests/video'},
-  { id : 4 , title: 'Responsive Dashboard', year: '2025' , imgUrl:'Dashboaard.png',videoUrl : '../assests/video/Dashboard.mp4'},
-  { id : 5 , title: 'Headphones Sell', year: '2025' , imgUrl:'Headphone.png',videoUrl : '../assests/video/JPJ.mp4'},
+  { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//education.png',videoUrl : '../assests/video'},
+  { id : 4 , title: 'Responsive Dashboard', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//Dashboaard.png',videoUrl : '../assests/video/Dashboard.mp4'},
+  { id : 5 , title: 'Headphones Sell', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//Headphone.png',videoUrl : '../assests/video/JPJ.mp4'},
   
 ];
 imagesData.forEach((imageData , id) => {
