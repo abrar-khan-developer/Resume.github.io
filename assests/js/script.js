@@ -42,7 +42,7 @@ function divAddInfo(tag){
 // section-3
 let projDiv = document.getElementById('project')
 const imagesData = [
-  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Archetecture.png',videoUrl : '../assests/video/Sedona.mp4'},
+  { id : 1 , title: 'Website For Archetecture Designer', year: '2023' , imgUrl:'../pic/Archetecture.png',videoUrl : '../assests/video/Sedona.mp4'},
   { id : 2 , title: 'E-commerce Website', year: '2024', imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/e-commerce.png',videoUrl : '../assests/video/E-commmerce.mp4' },
   { id : 3 , title: 'Short Courses online Website', year: '2025',imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//education.png',videoUrl : '../assests/video'},
   { id : 4 , title: 'Responsive Dashboard', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic//Dashboaard.png',videoUrl : '../assests/video/Dashboard.mp4'},
@@ -53,7 +53,7 @@ imagesData.forEach((imageData , id) => {
 
   const cardDiv = document.createElement('div');
   cardDiv.className = 'card';
-  cardDiv.style.backgroundImage = `url(../assests/pic/${imageData.imgUrl})`
+  cardDiv.style.backgroundImage = `url(${imageData.imgUrl})`
 
  
   const h3 = document.createElement('h3');
