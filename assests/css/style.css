@@ -147,7 +147,7 @@ nav ul li a:hover{
     top: -10;
 }
 .section-1 .img{
-    background-image: url('../pic/Abrar.jpeg');
+    background-image: url('https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Abrar.jpeg../pic/Abrar.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center ;
@@ -482,6 +482,7 @@ footer .social-logo a:hover{
      .contentShow .content{
         padding-top: 8%;
         font-size: 30px;
+        gap: 10%;
     }
     /* <========= Navbar ===========> */
     nav{
