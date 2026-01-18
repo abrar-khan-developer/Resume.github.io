@@ -6,7 +6,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-color: #414141;
+    background-color: var(--bg-primary-color);
 }
 /* <================ Global Css Classes ============> */
 button{
@@ -179,6 +179,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: flex-start;   
     padding-inline: 1rem;
+    color: #f9f9f9;
 }
 
 .section-2 .details p{
@@ -199,7 +200,8 @@ nav ul li a:hover{
 }
 /* <===========  section-3  ==============> */
 .section-3{
-    background-color: #f9f9f9;
+    background-color: var(--bg-primary-color);
+    /* #f9f9f9 */
     display: flex;
     flex-direction: column;
     justify-content: center;
