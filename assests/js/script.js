@@ -52,6 +52,8 @@ const imagesData = [
   
   { id : 5 , title: 'Headphones Sell', year: '2025' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/Headphone.png',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video/JPJ.mp4'},
   
+  { id : 6 , title: 'Image Editor', year: '2026' , imgUrl:'https://abrar-khan-developer.github.io/Resume.github.io/assests/pic/.picture_editorpng',videoUrl : 'https://abrar-khan-developer.github.io/Resume.github.io/assests/video/Picture-Editor.mp4'},
+  
 ];
 imagesData.forEach((imageData , id) => {
 
