@@ -72,7 +72,7 @@ h2 span{
 /* <================ Navbar Css Classes ============> */
 nav{
     display: flex;
-    background-color: black;
+    background-color: #E14949;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -108,13 +108,14 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    font-weight: 600;
     }
 .active{
-    color : #E14949;
+    color : white;
     cursor: pointer;
 }
 nav ul li a:hover{
-    color : #E14949;
+    color : black;
 }
 .show{
     display: flex;
@@ -136,15 +137,45 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(19, 18, 18) , rgb(27, 26, 26));
+    /* background-image: linear-gradient(rgb(19, 18, 18) , rgb(27, 26, 26)); */
     color: white;
     min-height: 90vh;
     flex: 1;
 }
+
+.container .text{
+        position: relative;
+        text-align: center;
+        color: blue;
+        font-size: 3rem;
+    }
+    .contaner .text.first-text{
+        color: white;
+    }
+    .text.sec-text{
+        overflow: hidden;
+    }
+    .text.sec-text::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--bg-primary-color);
+        border-left: 2px solid blue;
+        animation: animate 4s steps(12) infinite;
+    }
+    @keyframes animate {
+        40%, 60%{
+            left: 100%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
 .section-1 .selfInfoCard h2{
-    font-size: 2rem;
-    position: relative;
-    top: -10;
+   
 }
 .section-1 .img{
     background-image: url('../pic/Abrar.png');
@@ -218,6 +249,7 @@ nav ul li a:hover{
 }
 .section-3 .card .shadow{
     background-color: rgba(250, 246, 246, 0.8);
+    height: 100%;
     cursor: pointer;
     color: #E14949;
     font-size: 15px;
@@ -336,7 +368,7 @@ nav ul li a:hover{
 /* <===========  section-5  ==============> */
 .section-5{
     width: 100%;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding-inline: 5%;
     display: flex;
     gap: 50px;
@@ -350,6 +382,7 @@ nav ul li a:hover{
 }
 .section-5 .form .formIcon{
     flex: 1;
+    color: white;
 }
 .section-5 .form .formIcon .myDetails{
     display: flex;

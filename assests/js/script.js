@@ -211,3 +211,17 @@ const cardsData = [
 
     skillDiv.appendChild(cardDiv);
   });
+
+
+  // Animation section 
+    const text =  document.querySelector(".sec-text");
+    const textLoad = () => {
+        setTimeout( () => {
+            text.textContent = "Abrar khan"
+        },0)
+        setTimeout( () => {
+            text.textContent = "Rectjs Developer"
+        },4000)
+    }
+    textLoad()
+    setInterval(textLoad,8000)
