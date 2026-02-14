@@ -34,7 +34,6 @@ h2{
 }
 h2 span{
     color: rgba(160, 211, 218);
-    /* color: #E14949; */
 }
 
 /* <================ contentShow ============> */
@@ -73,7 +72,6 @@ h2 span{
 /* <================ Navbar Css Classes ============> */
 nav{
     display: flex;
-    /* background-color: #E14949; */
     background-color: rgba(27, 44, 75);
     position: fixed;
     width: 100%;
@@ -258,7 +256,6 @@ flex: 1;
     background-color: rgba(250, 246, 246, 0.8);
     height: 100%;
     cursor: pointer;
-    /* color: #E14949; */
     color: rgba(27, 44, 75);
     font-size: 15px;
     font-weight: 800;
@@ -312,13 +309,11 @@ flex: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* border: 2px solid blue; */
 }
 .section-4 .second .skills{
     padding-inline: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* gap: 20px; */
 }
 .skillCard{
     text-align: center;
