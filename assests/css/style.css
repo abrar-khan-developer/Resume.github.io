@@ -350,7 +350,6 @@ flex: 1;
   background: rgba(0, 0, 0, 0.3); 
   opacity: 0;
   transition: opacity 0.3s ease;
-  /* border: 2px solid rebeccapurple; */
 }
 .skillCard .img-wrapper:hover::after{
     height: 100%;
