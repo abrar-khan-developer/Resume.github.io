@@ -3,17 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --bg-color:rgba(27, 44, 75);
+    --primary-color:rgba(160, 211, 218);
+    --text-color: white;
+}
 html,body{
     width: 100%;
     height: 100%;
-    background-color: rgba(27, 44, 75);
+    background-color: var(--bg-color);
 }
 /* <================ Global Css Classes ============> */
 button{
-    background-color: rgba(160, 211, 218);
-    color: white;
+    background-color:var(--primary-color) ;
+   color: var(--text-color);
     font-weight: bold;
-    border: 2px solid rgba(160, 211, 218);
+    border: 2px solid var(--primary-color);
     padding-inline: 30px;
     padding-block: 20px;
     margin-top: 30px;
@@ -22,9 +27,9 @@ button{
     cursor: pointer;
 }
 button:hover{
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
     background-color: white;
-    border: 2px solid rgba(160, 211, 218);
+    border: 2px solid var(--primary-color);
 }
 h2{
     font-size: 2em;
@@ -33,7 +38,7 @@ h2{
     min-width: 100%;
 }
 h2 span{
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
 }
 
 /* <================ contentShow ============> */
@@ -54,7 +59,7 @@ h2 span{
     font-size: 20px;
     display: flex;
     gap: 20%;
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
     flex-direction: column;
     width: 90%;
     height: 100%;
@@ -72,14 +77,14 @@ h2 span{
 /* <================ Navbar Css Classes ============> */
 nav{
     display: flex;
-    background-color: rgba(27, 44, 75);
+    background-color: var(--bg-color);
     position: fixed;
     width: 100%;
     z-index: 999;
     padding-block: 1.5rem;
     padding-inline: 1.5rem;
     flex-direction: column;
-    border-bottom: 2px solid rgba(160, 211, 218);
+    border-bottom: 2px solid var(--primary-color);
 }
 .logo{
     flex: 1;
@@ -87,7 +92,7 @@ nav{
     justify-content: flex-end;
     justify-content: space-between;
     align-items: center;
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
     cursor: pointer;
 }
 nav .logo i{
@@ -115,16 +120,16 @@ nav ul li a{
     font-size: 20px;
     font-weight: 600;
     transition: all 1s;
-    color: white;
+   color: var(--text-color);
 }
 nav ul li a:hover{
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
 }
 .active{
-    color : rgba(160, 211, 218);
+    color : var(--primary-color);
 }
 nav ul li:hover{
-    border-bottom: 2px solid rgba(160, 211, 218);
+    border-bottom: 2px solid var(--primary-color);
 }
 .show{
     display: flex;
@@ -143,7 +148,7 @@ nav ul li:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+   color: var(--text-color);
     min-height: 90vh;
     flex: 1;
 }
@@ -151,11 +156,11 @@ nav ul li:hover{
 .container .text{
     position: relative;
     text-align: center;
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
     font-size: 3rem;
     }
 .contaner .text.first-text{
-    color: white;
+   color: var(--text-color);
 }
 .text.sec-text{
     overflow: hidden;
@@ -167,8 +172,8 @@ nav ul li:hover{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(27, 44, 75);
-    border-left: 2px solid rgba(160, 211, 218);
+    background-color: var(--bg-color);
+    border-left: 2px solid var(--primary-color);
     animation: animate 4s steps(12) infinite;
 }
 @keyframes animate {
@@ -256,7 +261,7 @@ flex: 1;
     background-color: rgba(250, 246, 246, 0.8);
     height: 100%;
     cursor: pointer;
-    color: rgba(27, 44, 75);
+    color: var(--bg-color);
     font-size: 15px;
     font-weight: 800;
     position: relative;
@@ -278,7 +283,7 @@ flex: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('./background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    color: white;
+   color: var(--text-color);
     display: flex;
     font-size: 1.4em;
     justify-content: space-around;
@@ -302,7 +307,7 @@ flex: 1;
     padding-bottom: 10px;
 }
 .section-4 .first h4:hover{
-    border-bottom: 2px solid rgba(160, 211, 218);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .section-4 .second{
@@ -323,7 +328,7 @@ flex: 1;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    color: white;
+   color: var(--text-color);
     font-size: 15px;
     overflow: hidden;
   
@@ -364,7 +369,7 @@ flex: 1;
 }
 .skillCard .img-wrapper i{
     /* color: #E14949; */
-    color: rgba(27, 44, 75);
+    color: var(--bg-color);
     font-size: 50px;
     display: none;
 }
@@ -389,7 +394,7 @@ flex: 1;
 }
 .section-5 .form .formIcon{
     flex: 1;
-    color: white;
+   color: var(--text-color);
 }
 .section-5 .form .formIcon .myDetails{
     display: flex;
@@ -418,10 +423,10 @@ flex: 1;
 
 /* <===========  Footer  ==============> */
 footer{
-    border-top: 1px solid rgba(160, 211, 218);
+    border-top: 1px solid var(--primary-color);
     margin-top: 5%;
     padding-inline: 20px;
-    color: white;
+   color: var(--text-color);
     padding-block: 5rem;
     display: flex;
     gap: 5rem;
@@ -446,7 +451,7 @@ footer .social-logo{
     justify-content: flex-end;
 }
 footer .social-logo a{
-    color: rgba(160, 211, 218);
+    color: var(--primary-color);
     font-size: 19px;
     cursor: pointer;
 }
